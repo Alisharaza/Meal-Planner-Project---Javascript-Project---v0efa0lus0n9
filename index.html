@@ -1,1 +1,102 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./App.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar">
+        <h1 class="logo">MEAL PLANNER</h1>
+      </nav>
+      <div class="form">
+        <form id="form">
+          <div class="input-wrapper">
+            <input
+              required
+              type="number"
+              id="height"
+              placeholder="Enter Height (cm)"
+            />
+            <input
+              required
+              type="number"
+              id="weight"
+              placeholder="Enter Weight (kg)"
+            />
+            <input required type="number" id="age" placeholder="Enter Age" />
+          </div>
+          <div class="input-wrapper">
+            <div>
+              <select name="gender" id="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+              </select>
+            </div>
+            <div>
+              <select name="physical-activity" id="physical-activity">
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn">
+            <button type="submit" class="main-btn">Generate Meals</button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="div-active">
+        <div class="meal-plan" id="meal-plan">
+          <div class="breakfast">
+            <h1 class="head-breakfast">BREAKFAST</h1>
+            <div>
+              <img class="img" src="" alt="this is meal img" />
+            </div>
+            <h1 class="title">Meal1</h1>
+            <h3 class="calories">Calories-300</h3>
+            <button type="submit" class="breakfast-recipe-btn">
+              Get Recipe
+            </button>
+          </div>
+          <div class="lunch">
+            <h1 class="head-lunch">LUNCH</h1>
+            <div>
+              <img class="img" src="" alt="this is meal img" />
+            </div>
+            <h1 class="title">Meal2</h1>
+            <h3 class="calories">Calories-300</h3>
+            <button type="submit" class="lunch-recipe-btn">Get Recipe</button>
+          </div>
+          <div class="dinner">
+            <h1 class="head-dinner">DINNER</h1>
+            <div>
+              <img class="img" src="" alt="this is meal img" />
+            </div>
+            <h1 class="title">Meal3</h1>
+            <h3 class="calories">Calories-300</h3>
+            <button type="submit" class="dinner-recipe-btn">Get Recipe</button>
+          </div>
+        </div>
+        <div class="recipe" id="recipe">
+          <div class="ingredients-box">
+            <h3>INGREDIENTS</h3>
+            <ul class="ingredients-list"></ul>
+          </div>
+          <div class="steps-box">
+            <h3>STEPS</h3>
+            <ul class="steps-list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023. All right reserved</p>
+    </footer>
+  </body>
+</html>
